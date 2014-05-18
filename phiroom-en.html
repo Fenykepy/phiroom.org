@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Phiroom, photographers'cms</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="css/phiroom.org.min.css" /><!-- remove in dev -->
+        <!--<link rel="stylesheet/less" href="css/controller.less" />--><!-- remove in prod -->
+		<link rel="icon" type="image/png" href="images/phiroom-favicon.png" />
+	</head>
+	<body>
+        <div id="top"></div>
+		<header role="banner">
+            <div class="header-wrapper">
+			<a href="#about"><h1 id="logo">Phiroom, photographers'cms</h1></a>
+			<nav role="navigation">
+			    <ul id="menu">
+                    <!--<li><a href="#" >News</a></li>-->
+					<li><a href="#about"  class="selected" >About</a></li>
+					<li><a href="#screenshots" >Screenshots</a></li>
+					<li><a href="#license" >License</a></li>
+					<li><a href="#download" >Download</a></li>
+				</ul>
+			</nav>
+            </div>
+            <hr />
+		</header>
+        <div id="phiroom-header">
+            <div class="header-wrapper">
+                <img src="images/phiroom.svg" alt="Phiroom, le cms des photographes" />
+            </div>
+            <hr />
+        </div>
+        <section>
+            <article id="about">
+                <h1>About Phiroom</h1>
+                <h2>Generality</h2>
+                <p>Phiroom is a web pictures management software, built for photographers.</p>
+                <p>It's made of :</p>
+                <ul>
+                    <li>a public part ;</li>
+                    <li>a restricted acces part.</li>
+                </ul>
+                <h3>Public part</h3>
+                <p>Public part allows you to publish your work under :</p>
+                <ul>
+                    <li><strong>galleries :</strong> groups of pictures associated with a description;</li>
+                    <li><strong>picture of the day :</strong> one picture per day on top of a specific page;</li>
+
+                    <li><strong>portfolios :</strong> some galleries on top of a specific page;</li>
+                    <li><strong>articles :</strong> publications of any kind where text is dominant.</li>
+                </ul>
+                <p>Descriptions of galleries, portfolios, pictures of day and articles are written in <a target="_blank" href="http://daringfireball.net/projects/markdown/">markdown</a>.</br>
+                Each publication appears on weblog page by chronologic order.
+                </p>
+                <p>Public part of a phiroom powered website is available <a target="_blank" href="http://www.lavilotte-rolle.fr/">here</a>.
+                <h3>Restricted access part</h3>
+                <p>Restricted access part actually allows all public part's administration's tasks, and management of pictures:</p>
+                <ul>
+                    <li>creating and updating galleries;</li>
+                    <li>creating and updating portfolios;</li>
+                    <li>creating and updating pictures of day;</li>
+                    <li>creating and updating articles;</li>
+                    <li>sorting publications by categories and keywords ;</li>
+                    <li>importing pictures to the library;</li>
+                    <li>sorting pictures by folders;</li>
+                    <li>sorting pictures by collections ;</li>
+                    <li>changing cms' settings.</li>
+                </ul>
+                <p>In future versions, it should allow restricted access to collections and collections' ensembles to authenticated users with right permissions, and management of pictures' <a target="_blank" href="http://en.wikipedia.org/wiki/Exchangeable_image_file_format">exif</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model">iptc</a> metadatas.</p>
+                <h2>Technical</h2>
+                <p>Phiroom's server part is written in python 3, and use <a target="_blank" href="https://www.djangoproject.com/">django</a> framework.</p>
+                <p>Client's part is written in html5, css3, javascript and use <a target="_blank" href="http://jquery.com/">jquery</a> framework for the lightbox and some visual effects.</p>
+                <p>A point of honor is made to keep the whole website accessible to no javascript browsers and screen readers through links of avoidance. However, private part usage without javascript comes with some limitations, and some confort elements of public part (including lightbox) won't be available.</p>
+            </article>
+
+            <article id="screenshots">
+                <h1>Screenshots</h1>
+                <div id="gallery">
+                    <ul>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-1.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-1.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-2.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-2.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-3.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-3.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-4.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-4.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-5.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-5.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-6.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-6.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-7.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-7.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-8.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-8.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-9.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-9.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-10.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-10.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-11.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-11.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-12.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-12.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-13.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-13.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-14.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-14.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-15.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-15.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-16.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-16.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-17.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-17.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-18.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-18.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-19.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-19.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-20.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-20.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-21.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-21.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-22.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-22.png" alt="phiroom's screenshot" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-23.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-23.png" alt="phiroom's screenshot" /></a></li>
+                    </ul>
+                </div>
+
+            </article>
+            
+            <article id="license">
+                <h1>License</h1>
+                <p>
+                Distributed under the termes of the GNU General Public License or higher,
+                <strong>Phiroom</strong> is a <strong>free</strong> software.</p>
+                <p>Terms of GPL 3 are freely accessible <a target="_blank" href="http://www.gnu.org/licenses/gpl-3.0.en.html">here</a>.</p>
+
+            </article>
+
+            <article id="download">
+                <h1>Download</h1>
+                <p>
+                Still in test phase, Phiroom will be available soon,
+                through download of an archive to install,
+                or creation of an account on <strong>phiroom.com</strong>.
+                </p>
+                <p>
+                It is nonetheless already possible to get sources from <a target="_blank" href="http://www.fossil-scm.org">fossil</a> cvs.<br />
+                You need to install fossil executable on your system and run:
+                </p>
+                <pre><code>fossil clone https://fossil.lavilotte-rolle.fr/phiroom-django phiroom-django.fossil</code></pre>
+                <p>
+                If you wish to take part in the project, please send me a mail (read INSTALL.txt in sources to get it).
+                </p>
+            </article>
+
+        </section>
+        <footer>
+            <hr />
+            <a id="pageup" href="#top" title="haut de page">top</a>
+            <ul id="lang">
+                <li><a href="/">french</a></li>
+                <li><a href="/en/">english</a></li>
+                <li><a href="/ru/">russian</a></li>
+            </ul>
+            <p id="copyleft">© Copyleft 2013|<span>Phiroom</span></p>
+        </footer>
+		<div id="overlay"></div>
+	
+		<!--<script src="scripts/jquery-2.0.3.min.js"></script>-->
+        <!--<script src="scripts/less-1.4.1.min.js"></script>--><!-- remove in prod -->
+	</body>
+</html>
+
+
+

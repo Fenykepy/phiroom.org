@@ -1,0 +1,365 @@
+/**
+* Phiroom
+*
+* Copyright 2013 Lavilotte-Rolle Frédéric
+*
+* @contact <phiroom@lavilotte-rolle.fr>
+*
+*    This file is part of Phiroom.
+*
+*   Phiroom is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   Phiroom is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with Phiroom in COPYING file.
+*   If not, see <http://www.gnu.org/licenses/>.
+*
+*/
+
+
+/**********************************************/
+/*            Main Page layout                */
+/**********************************************/
+html {
+    height: 100%;
+}
+body {
+    font-family: @sans;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: @00;
+    background-color: @22;
+    position: relative;
+    width: 100%;
+}
+
+
+/********************/
+/* generic elements */
+/********************/
+
+strong, label, h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+em, h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
+// links
+a {
+    color: @91;
+    &:hover, &:active, &:focus {
+        color: @CC;
+    }
+}
+
+// selected text
+*::selection, *::-moz-selection {
+    background: @CC;
+    color: @00;
+}
+// hlines
+hr {
+    height: 1px;
+    border: none;
+    color: @44;
+    margin: 8px 0 0;
+    background-color: @44;
+}
+
+/************/
+/* headings */
+/************/
+
+h1 { font-size: 2.1em; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.1em; }
+
+h1, h2, h3, h4, h5, h6 { 
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+p { margin: 1em 0 0.5em; }
+
+ul {
+    padding-left: 40px;
+    list-style-type: square;
+}
+
+/***********************/
+/* contextual elements */
+/***********************/
+
+// page width
+@page-width: 1000px;
+@header-height: 70px;
+@footer-height: 112px;
+
+
+
+body > header {
+    z-index: 500;
+    background: @00;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: @header-height;
+    text-align: right;
+    h1#logo {
+        margin: 0;
+        position: absolute;
+        display: block;
+        top: 11px;
+        left: 10px;
+        width: 94px;
+        height: 45px;
+        background: url('../images/phiroom.png') no-repeat;
+        .out-screen;
+    }
+    nav {
+        position: relative;
+        margin-right: 10px;
+        display: inline-block;
+        margin-left: 114px;
+        line-height: 26px;
+        margin-top: 29px;
+    }
+    hr {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 3px;
+    }
+}
+
+.header-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: @page-width;
+}
+
+#phiroom-header {
+    position: relative;
+    z-index: 480;// else section's shadow eats hr
+    margin-top: @header-height;
+    background: @00;
+    text-align: center;
+    padding: 40px 0 3px 0;
+    img {
+        max-width: 90%;
+    }
+}
+
+// page footer
+body > footer {
+    position: relative;
+    z-index: 490;// else section's shadow eats hr
+    box-sizing: border-box;
+    height: @footer-height;
+    background: @00;
+    padding: 3px 0 3px;
+    hr {
+        margin: 0;
+    }
+}
+// main nav menu 
+#menu, #lang {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+        display: inline;
+        border-right: 1px solid @91;
+        padding: 0 15px;
+        &:last-child {
+            padding-right: 0;
+            border: none;
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+// langage selection menu
+#lang {
+    margin: 10px 0;
+    li {
+        display: inline-block;
+        padding: 0 15px;
+        width: 70px;
+        font-size: 0.8em;
+    }
+}
+
+// Copyleft mention
+#copyleft {
+    margin: 1.8em 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: @91;
+    span {
+        font-weight: bold;
+    }
+}
+
+// anchors style (to avoid them to arrive under header
+.anchor {
+    padding-top:@header-height;
+    position: relative;
+    top: -@header-height;
+    margin-bottom: -@header-height;
+}
+
+// to give back normal bottom margin to last .anchor element
+section .anchor:last-child {
+    margin-bottom: 100px;
+}
+
+// pageup link
+#pageup {
+    display: block;
+    position: relative;
+    .out-screen;
+    height: 20px;
+    &::before {
+        .arrow-up;
+        left: 50%;
+        margin-left: -7px; // for centering
+        top: 4px;
+    }
+    &:hover:before, &:focus:before { .arrow-up(@91); }
+}
+
+
+section {
+    position: relative;
+    width: @page-width;
+    margin: 0 auto;
+    padding: 1px 100px;
+    background: @66;
+    box-shadow: 0px 0px 30px @00;
+    box-sizing: border-box;
+    a {
+        color: @CC;
+        &:hover, &:active {
+            color: @FF;
+        }
+    }
+}
+
+article {
+    position: relative;
+    margin: 100px 0;
+}
+
+#gallery {
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+pre {
+    font-size: 1.1em;
+    text-indent: 15px;
+    line-height: 1.3em;
+    vertical-align: middle;
+    background-color: @44;
+    border-radius: 5px;
+    border: 1px solid @00;
+    overflow: auto;
+}
+
+code {
+    margin: 1em 0;
+    font-family: @mono;
+    font-size: 0.8em;
+}
+// overlay
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: @00;
+    opacity: 0.6;
+    z-index: 999;
+    &.dark {
+        opacity: 0.8;
+    }
+    &.opaque {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 500px) {
+    section, .header-wrapper {
+        width: 450px;
+    }
+}
+
+@media (min-width: 600px) {
+    section, .header-wrapper {
+        width: 550px;
+    }
+}
+
+@media (min-width: 700px) {
+    section, .header-wrapper {
+        width: 650px;
+    }
+}
+
+@media (min-width: 800px) {
+    section, .header-wrapper {
+        width: 750px;
+    }
+}
+
+@media (min-width: 900px) {
+    section, .header-wrapper {
+        width: 850px;
+    }
+}
+
+@media (min-width: 1000px) {
+    section, .header-wrapper {
+        width: 900px;
+    }
+}
+
+@media (min-width: 1100px) {
+    section, .header-wrapper {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    section, .header-wrapper {
+        width: 1100px;
+    }
+}
+

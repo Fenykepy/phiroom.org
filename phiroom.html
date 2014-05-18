@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Phiroom, le cms des photographes</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="css/phiroom.org.min.css" /><!-- remove in dev -->
+        <!--<link rel="stylesheet/less" href="css/controller.less" />--><!-- remove in prod -->
+		<link rel="icon" type="image/png" href="images/phiroom-favicon.png" />
+        <meta name="google-site-verification" content="ejWyVHiKF_alzOm_3Yp3_jeKF6IwgB_rJyE2y3OJoo4" />
+	</head>
+	<body>
+        <div id="top"></div>
+		<header role="banner">
+            <div class="header-wrapper">
+			<a href="#about"><h1 id="logo">Phiroom, le cms des photographes</h1></a>
+			<nav role="navigation">
+			    <ul id="menu">
+                    <!--<li><a href="#" >News</a></li>-->
+					<li><a href="#about"  class="selected" >À propos</a></li>
+					<li><a href="#screenshots" >Captures d'écran</a></li>
+					<li><a href="#license" >Licence</a></li>
+					<li><a href="#download" >Télécharger</a></li>
+				</ul>
+			</nav>
+            </div>
+            <hr />
+		</header>
+        <div id="phiroom-header">
+            <div class="header-wrapper">
+                <img src="images/phiroom.svg" alt="Phiroom, le cms des photographes" />
+            </div>
+            <hr />
+        </div>
+        <section>
+            <article id="about">
+                <h1>À propos de Phiroom</h1>
+                <h2>Généralités</h2>
+                <p>Phiroom est une plateforme web de gestion d'images, conçue pour les photographes.</p>
+                <p>Il se compose :</p>
+                <ul>
+                    <li>d'une partie publique ;</li>
+                    <li>d'une partie à accès restreint.</li>
+                </ul>
+                <h3>Partie publique</h3>
+                <p>La partie publique vous permet de diffuser votre travail sous forme :</p>
+                <ul>
+                    <li><strong>de galeries :</strong> des groupes de photos associées à une description ;</li>
+                    <li><strong>d'images du jour :</strong> une photo mise en avant chaque jour sur une page dédiée ;</li>
+
+                    <li><strong>de portfolios :</strong> des galeries à l'honneur sur une page dédiée ;</li>
+                    <li><strong>d'articles :</strong> des publications de toutes sortes dont le contenu textuel prédomine.</li>
+                </ul>
+                <p>Les descriptions des galeries, portfolios et images du jour ainsi que les articles sont rédigés en <a target="_blank" href="http://daringfireball.net/projects/markdown/">markdown</a>.</br>
+                Chaque publication apparaît sur la page weblog par ordre chronologique.
+                </p>
+                <p>La partie publique d'un site utilisant phiroom est accessible <a target="_blank" href="http://www.lavilotte-rolle.fr/">ici</a>.
+                <h3>Partie privée</h3>
+                <p>La partie privée permet actuellement d'effectuer toutes les tâches d'administration de la partie publique, ainsi que le classement des images :</p>
+                <ul>
+                    <li>créer et mettre à jour les galeries ;</li>
+                    <li>créer et mettre à jour les portfolios ;</li>
+                    <li>créer et mettre à jour les images du jour ;</li>
+                    <li>créer et mettre à jour les articles ;</li>
+                    <li>classer les publications par catégories et mots clés ;</li>
+                    <li>importer des images dans la bibliothèque ;</li>
+                    <li>classer les images par dossiers ;</li>
+                    <li>classer les images par collections ;</li>
+                    <li>modifier les options de configuration du cms.</li>
+                </ul>
+                <p>À terme, elle devrait permettre un accès restreint aux collections et ensembles de collections aux utilisateurs autorisés, ainsi que la manipulation par lot des métadonnées <a target="_blank" href="http://fr.wikipedia.org/wiki/Exchangeable_image_file_format">exif</a> et <a target="_blank" href="http://fr.wikipedia.org/wiki/IPTC_Information_Interchange_Model">iptc</a>.</p>
+                <h2>Technique</h2>
+                <p>Phiroom est écrit en python 3 pour la partie serveur, et utilise le framework <a target="_blank" href="https://www.djangoproject.com/">django</a>.</p>
+                <p>La partie client est écrite en html5, css3, javascript et utilise le framework <a target="_blank" href="http://jquery.com/">jquery</a> pour la lightbox et certains effets visuels.</p>
+                <p>Un point d'honneur est mis pour garder la totalité du site accessible aux navigateurs ne disposant pas de javascript ainsi qu'aux lecteurs d'écrans au travers de liens d'évitement. Cependant, l'utilisation de la partie privée sans javascript se retrouve fortement limitée, et certains agréments de la partie publique (dont la lightbox) ne sont pas possibles.</p>
+            </article>
+
+            <article id="screenshots">
+                <h1>Captures d'écran</h1>
+                <div id="gallery">
+                    <ul>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-1.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-1.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-2.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-2.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-3.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-3.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-4.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-4.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-5.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-5.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-6.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-6.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-7.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-7.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-8.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-8.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-9.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-9.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-10.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-10.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-11.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-11.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-12.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-12.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-13.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-13.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-14.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-14.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-15.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-15.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-16.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-16.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-17.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-17.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-18.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-18.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-19.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-19.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-20.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-20.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-21.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-21.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-22.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-22.png" alt="capture d'écran de phiroom" /></a></li>
+                        <li><a target="_blank" href="images/screenshots/full/phiroom-screenshot-23.png" ><img class="thumb" src="images/screenshots/thumbs/phiroom-screenshot-23.png" alt="capture d'écran de phiroom" /></a></li>
+                    </ul>
+                </div>
+
+            </article>
+            
+            <article id="license">
+                <h1>License</h1>
+                <p>
+                Distribué sous les termes de la version 3 de la GNU General Public License ou supérieure,
+                <strong>Phiroom</strong> est un logiciel <strong>libre</strong>.</p>
+                <p>Les clauses de la GPL 3 sont librement consultables <a target="_blank" href="http://www.gnu.org/licenses/">ici</a>.</p>
+
+            </article>
+
+            <article id="download">
+                <h1>Télécharger</h1>
+                <p>
+                Encore en phase de test, Phiroom sera bientôt disponible,
+                au travers du téléchargement d'une archive à installer,
+                ou de la création d'un compte sur <strong>phiroom.com</strong>.
+                </p>
+                <p>
+                Il est néanmoins d'ores et déjà possible de récupérer les sources via le cvs <a target="_blank" href="http://www.fossil-scm.org">fossil</a>.<br />
+                Pour ce faire installez l'exécutable fossil sur votre système et faites un clône du dépôt :
+                </p>
+                <pre><code>fossil clone https://fossil.lavilotte-rolle.fr/phiroom-django phiroom-django.fossil</code></pre>
+                <p>
+                Si vous souhaitez participer au projet, envoyez moi un email (lire INSTALL.txt dans les sources pour l'obtenir).
+                </p>
+            </article>
+
+        </section>
+        <footer>
+            <hr />
+            <a id="pageup" href="#top" title="haut de page">haut de page</a>
+            <ul id="lang">
+                <li><a href="/">français</a></li>
+                <li><a href="/en/">anglais</a></li>
+                <li><a href="/ru/">russe</a></li>
+            </ul>
+            <p id="copyleft">© Copyleft 2013|<span>Phiroom</span></p>
+        </footer>
+		<div id="overlay"></div>
+	
+		<!--<script src="scripts/jquery-2.0.3.min.js"></script>-->
+        <!--<script src="scripts/less-1.4.1.min.js"></script>--><!-- remove in prod -->
+	</body>
+</html>
+
+
+

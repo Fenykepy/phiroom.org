@@ -1,0 +1,116 @@
+==== À propos ====
+
+=== Textuel ===
+
+Phiroom est une plateforme web de gestion d'images pour les photographes.
+Ils se compose de deux parties :
+    - une partie publique ;
+    - une partie à accès restreint.
+
+La partie publique sert à diffuser son travail sous forme :
+    - de galeries :
+        - des groupes de photos associés à une description publiées par ordre chronologique.
+    - d'images du jour :
+        - une image mise en avant chaque jour sur une page dédiée.
+    - de portfolios :
+        - une sélection de galeries mises en avant sur une page dédiée.
+    - d'articles :
+        - des publication de toutes sortes dont le contenu textuel prédomine.
+        - rédaction en markdown ;
+        - détails typographiques.
+
+La partie privée sert à :
+    - classer vos images :
+        - par dossiers ;
+        - par collections ;
+        - par mots clés ;
+    - effectuer des recherches dans vos images :
+        - par dates ;
+        - par mots clés ;
+        - suivant les métadonnées exifs ;
+        - suivant les métadonnées iptc ;
+    - donner un accès à certaines galeries à des utilisateurs particuliers ;
+    - publier du contenu sur la partie publique ;
+    - gérer certaines options de configuration du site.
+=== Slide ===
+#Phiroom
+
+#Le cms des photographes (dans l'œil du O de Phiroom, à l'échelle)
+
+(en margueritte)
+Importez vos photos
+
+Classez-les en dossiers et collections
+
+Attribuez leur des mots clés
+
+Ajoutez les à une galerie
+Le reste du monde les regardes
+
+Une image chaque jour,
+Pour fidéliser votre auditoire
+
+Un portfolio, 
+pour mettre les plus belles en avant
+
+Des articles,
+Pour parler de tout et de rien
+
+Un accès restreint,
+Pour faciliter l'échange avec vos clients
+
+
+==== Captures d'écran ====
+
+en grille sous le texte
+    - portfolio
+    - portfolio ouvert
+    - portfolio lightbox
+    - weblog avec mélange d'article, galeries, portfolios, images du jour et pagination
+    - galerie ouverte
+    - galerie lightbox
+    - image du jour
+    - image du jour lightbox
+    - article texte
+    - article essaie
+    - article avec images
+    - form login
+    - bibliothèque
+    - form d'inscription
+    - form de configuration
+    - form de mise à jour de portfolio
+    - glissé déposé
+
+une slide par screenshot, avec titre
+
+==== License ====
+
+Phiroom est un logiciel libre disponible sous les termes de la licence GPLv3 et ultérieures.
+Cette licence vous accorde :
+    - la liberté d'utiliser le logiciel pour n'importe quel usage ;
+    - la liberté de modifier le programme pour répondre à vos besoins ;
+    - la liberté de redistribuer des copies à vos amis et voisins ;
+    - la liberté de partager avec d'autres les modifications que vous faites.
+plus d'information sur la licence GPLv3 ici.
+
+=== Slide ===
+(rotation 270°)
+Phiroom est un logiciel libre
+Distribué sous la version 3
+de la GNU General Public License
+
+==== Téléchargement ====
+
+Phiroom est aujourd'hui encore en phase de développement.
+Une démo de la partie publique est néanmoins disponible ici.
+Des offres d'hébergement seront bientôt disponibles sur phiroom.com.
+Pour participer au projet et récupérer les sources, merci de contacter contactez l'auteur.
+
+=== Slide ===
+(collé au paragraphie licence, à l'horizontale)
+Encore en phase de test
+Phiroom sera disponible bientôt
+Une offre d'hébergement est prévue
+Pour participer au projet :
+
+        contacter l'auteur.
